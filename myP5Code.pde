@@ -15,6 +15,23 @@ draw = function(){
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
 
+mouseClicked = function(){
+  var myText = "x: " + mouseX + "\ny: " + mouseY;
+  console.log(myText);
+drawName();
+drawName();
+drawName();
+};
+
+var drawName= function (){
+var textX = random(50, 550);
+  var textY = random(50, 350);
+  var yourName = "｡˚○";
+
+  fill(0,9,55);
+  textSize(40);
+  text( yourName, textX, textY);} 
+
 }
 
 //🟡drawFish Function - will run when called
