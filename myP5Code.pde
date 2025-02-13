@@ -5,15 +5,45 @@ setup = function() {
     
     drawFish(200, 200, color(200,0,200)); 
     drawFish(300, 200, color(0,200,200));
+    drawShark(200,200)
 };
 
 //🟢draw Function - will run on repeat
-draw = function(){
+
+var drawShark = function(sharkX,sharkY){
+
+// var sharkX=248;
+// var sharkY=185;
+noStroke();
+fill(192,192,192);
+ellipse(sharkX,sharkY, 1000,90);//body
+fill(0,0,0);
+fill(255, 237, 209);
+
+    
+
 
 };
 
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
+
+mouseClicked = function(){
+  var myText = "x: " + mouseX + "\ny: " + mouseY;
+  console.log(myText);
+drawName();
+drawName();
+drawName();
+};
+
+var drawName= function (){
+var textX = random(50, 550);
+  var textY = random(50, 350);
+  var yourName = "｡˚○";
+
+  fill(0,9,55);
+  textSize(40);
+  text( yourName, textX, textY);} 
 
 }
 
@@ -21,7 +51,7 @@ mouseClicked = function(){
 var drawFish = function(fishX, fishY, fishColor){
   textSize(80);
   fill(fishColor);
-  text("𓆝", fishX, fishY);
+  text("🐡", fishX, fishY);
 };
 
 
