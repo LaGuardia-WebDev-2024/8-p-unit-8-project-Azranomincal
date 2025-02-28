@@ -10,13 +10,13 @@ setup = function() {
 
 //🟢draw Function - will run on repeat
 
-var drawShark = function(sharkX,sharkY){
+var drawShark = function(stingX,stingY){
 
-// var sharkX=248;
-// var sharkY=185;
+// var stingX=248;
+// var stingY=185;
 noStroke();
 fill(192,192,192);
-ellipse(sharkX,sharkY, 1000,90);//body
+ellipse(stingX,stingY, 1000,90);//body
 fill(0,0,0);
 fill(255, 237, 209);
 
@@ -34,6 +34,7 @@ mouseClicked = function(){
 drawName();
 drawName();
 drawName();
+
 };
 
 var drawName= function (){
